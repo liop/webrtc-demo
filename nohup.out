@@ -1,0 +1,16 @@
+yarn run v1.2.1
+$ nodemon --watch server --watch package.json --watch .env server/index.js --exec babel-node --presets es2015,stage-2
+[33m[nodemon] 1.12.1[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: /Users/lizhengfeng/work/tongyi/demo/webrtc/server/**/* package.json .env[39m
+[32m[nodemon] starting `babel-node server/index.js --presets es2015,stage-2`[39m
+yarn run v1.2.1
+$ nodemon --watch server --watch package.json --watch .env server/index.js --exec babel-node --presets es2015,stage-2
+[33m[nodemon] 1.12.1[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: /Users/lizhengfeng/work/tongyi/demo/webrtc/server/**/* package.json .env[39m
+[32m[nodemon] starting `babel-node server/index.js --presets es2015,stage-2`[39m
+server listen at port:  3000
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `babel-node server/index.js --presets es2015,stage-2`[39m
+server listen at port:  3000

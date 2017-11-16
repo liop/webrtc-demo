@@ -1,12 +1,13 @@
 /*
 * @Author: lizhengfeng
 * @Date:   2017-11-14 15:19:45
-* @Last Modified by:   lizhengfeng
-* @Last Modified time: 2017-11-14 19:06:28
+* @Last Modified by:   liop
+* @Last Modified time: 2017-11-15 22:17:18
 */
 
 import socketIO from 'socket.io';
 
+const rooms = {};
 function realtime(socket) {
   const io = socket.server;
   // convenience function to log server messages on the client
@@ -30,9 +31,9 @@ function realtime(socket) {
   socket.on('create or join', function(room) {
     log('Received request to create or join room ' + room);
 
-    var numClients = io.sockets.sockets.length;
+    var numClients = io.to(room).clients()
     log('Room ' + room + ' now has ' + numClients + ' client(s)');
-
+    console.log(numClients, io.to(room).clients);
     if (numClients === 1) {
       socket.join(room);
       log('Client ID ' + socket.id + ' created room ' + room);

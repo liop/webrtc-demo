@@ -40,6 +40,7 @@
     "node-fetch": "^1.7.1",
     "nuve": "^0.1.0",
     "optics-agent": "^1.1.4",
+    "pm2": "^2.7.2",
     "sequelize": "^4.4.2",
     "socket.io": "^2.0.4",
     "sqlite3": "^3.1.8",
